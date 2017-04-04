@@ -19,7 +19,7 @@ class newrelic::params {
       $newrelic_php_package   = 'newrelic-php5'
       $newrelic_php_service   = 'newrelic-daemon'
       $newrelic_php_conf_dir  = ['/etc/php.d']
-      $newrelic_manage_repo   = true,
+      $newrelic_manage_repo   = true
 
       if $manage_repo == true {
         package { 'newrelic-repo-5-3.noarch':
@@ -54,7 +54,7 @@ class newrelic::params {
         'Debian': {
           case $::operatingsystemrelease {
             /^6/: {
-              $newrelic_php_conf_dir  = ['/etc/php5/conf.d']
+              $newrelic_php_conf_dir  = ['/etc/php7/conf.d']
             }
             default: {
               $newrelic_php_conf_dir  = ['/etc/php5/mods-available']
