@@ -40,6 +40,7 @@ define newrelic::php (
   $newrelic_php_service_enable                           = true,
   $newrelic_php_conf_dir                                 = $newrelic::params::newrelic_php_conf_dir,
   $newrelic_license_key                                  = undef,
+  $newrelic_manage_repo                                  = $newrelic::params::newrelic_manage_repo,
   $newrelic_ini_appname                                  = undef,
   $newrelic_ini_browser_monitoring_auto_instrument       = undef,
   $newrelic_ini_enabled                                  = undef,
