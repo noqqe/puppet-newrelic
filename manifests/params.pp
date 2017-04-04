@@ -34,7 +34,7 @@ class newrelic::params {
       $newrelic_service_name  = 'newrelic-sysmond'
       $newrelic_php_package   = 'newrelic-php5'
       $newrelic_php_service   = 'newrelic-daemon'
-      $newrelic_manage_repo   = true,
+      $newrelic_manage_repo   = true
 
       if $manage_repo == true {
         apt::source { 'newrelic':
